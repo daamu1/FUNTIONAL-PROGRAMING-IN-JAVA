@@ -32,7 +32,16 @@ public class Excercise02 {
         printSortedAndDistinctInCourseFuntional(courses);
         System.out.println("****** Sorted Date *******");
         printSortedDateFuntional(dateTimeData);
+        System.out.println("****** Course Length  *******");
+        printCourseLengthFuntional(courses);
+    }
 
+    private static void printCourseLengthFuntional(List<String> courses) {
+        courses
+                .stream()
+                .map(String::length)
+                .toList()
+                .forEach(System.out::println);
     }
 
     private static void printSortedDateFuntional(List<String> dateTimeData) {
