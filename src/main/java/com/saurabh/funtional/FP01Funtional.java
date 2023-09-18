@@ -13,13 +13,12 @@ public class FP01Funtional {
         System.out.println("***** Even Number *****");
         printEvenNumbersInListFuntional(numbers);
 
-
     }
 
     private static void printEvenNumbersInListFuntional(List<Integer> numbers) {
         numbers
                 .stream()
-                .filter(number->number%2==0)
+                .filter(number -> number % 2 == 0)
                 .forEach(System.out::println);
     }
 
@@ -28,6 +27,4 @@ public class FP01Funtional {
                 .forEach(System.out::println);
 
     }
-
-
 }

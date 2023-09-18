@@ -11,8 +11,6 @@ public class FP01Structured {
         printAllNumbersInListStructured(numbers);
         System.out.println("***** Even Number *****");
         printEvenNumbersInListStructured(numbers);
-
-
     }
 
     private static void printAllNumbersInListStructured(List<Integer> numbers) {
